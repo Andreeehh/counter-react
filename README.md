@@ -1,3 +1,7 @@
+## Projeto padrão criado com create-react-app
+Projeto utiliza de um component button que pode receber ações por parametro para executar uma função que dispara uma ação, que de acordo com o tipo recebido por parametro, executa a ação que muda o initialState do Context do Counter
+Utilizado os Hooks de react
+useReducer para alterar o initialState, useRef para garantir que o actions nao muda entre renderizações, useContext para proteger outros desenvolvedores de utilizar os valores corretos dentro do provider
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
