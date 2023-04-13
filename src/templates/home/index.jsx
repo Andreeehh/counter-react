@@ -5,13 +5,6 @@ import { useCounterContext } from '../../contexts/CounterContext';
 export const Home = () => {
   const [state, actions] = useCounterContext();
 
-  const handleError = () => {
-    actions
-      .asyncError()
-      .then((r) => console.log(r))
-      .catch((e) => console.log(e.name, ':', e.message));
-  };
-
   return (
     <div>
       <Heading />
